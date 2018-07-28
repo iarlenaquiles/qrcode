@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { Toast } from '@ionic-native/toast';
 import { ProductServiceProvider } from '../providers/product-service/product-service';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ProductServiceProvider } from '../providers/product-service/product-ser
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
