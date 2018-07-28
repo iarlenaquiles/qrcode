@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { Toast } from '@ionic-native/toast';
+import { ProductServiceProvider } from '../providers/product-service/product-service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { Toast } from '@ionic-native/toast';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     BarcodeScanner,
-    Toast
+    Toast,
+    ProductServiceProvider
   ]
 })
 export class AppModule {}
